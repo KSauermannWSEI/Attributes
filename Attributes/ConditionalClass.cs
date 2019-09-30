@@ -1,4 +1,4 @@
-﻿#define Release
+﻿#define RELEASE
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -11,13 +11,13 @@ namespace Attributes
 {
     class ConditionalClass
     {
-        //[Conditional("DEBUG")]
+        [Conditional("DEBUG")]
         public void Login()
         {
             ShowUI();
         }
 
-        //[Conditional("Release")]
+        [Conditional("RELEASE")]
         public void Login(string user, string password)
         {
             Console.WriteLine(1);

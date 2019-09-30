@@ -18,11 +18,11 @@ namespace Attributes
             //stopwatch.Stop();
             //Console.WriteLine(stopwatch.ElapsedTicks);
             ConditionalClass conditionalClass = new ConditionalClass();
-#if DEBUG
+//#if DEBUG
             conditionalClass.Login();
-#else
+//#else
             conditionalClass.Login("user", "pass");
-#endif
+//#endif
             Console.Read();
         }
     }
